@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     uglifyCSS = require('gulp-uglifycss');
 gulp.task('js', function() {
   gulp.src('lib/**/*.js')
+  .on('error', swallowError)
   .pipe(uglify())
   .pipe(concat('script.js'))
   .pipe(gulp.dest('js'))
@@ -13,15 +14,15 @@ gulp.task('js', function() {
 gulp.task('sass', function() {
   gulp.src('./sass/**/*.{scss,sass}')
     .pipe(sass({
-      errLogToConsole: true,
-      includePaths: ['node_modules/susy/sass']
-      }))
-    // Writes sourcemaps into the CSS file
-    .pipe(uglifyCSS())
+      errLogToConsole: true
+    }))
     .pipe(cleanCSS())
+    .pipe(uglifyCSS())
     .pipe(gulp.dest('./css'));
 });
 gulp.task('watch', function() {
   gulp.watch('./sass/**/*.{scss,sass}',['sass']);
   gulp.watch('./lib/**/*.js', ['js']);
 });
+
+function swallowError (error) {this.emit('end')}

@@ -1,14 +1,15 @@
 {
-"devDependencies": {
-  "gulp": "latest",
-  "gulp-util": "latest",
-  "gulp-sass": "latest",
-  "gulp-coffee": "latest",
-  "gulp-uglify": "latest",
-  "gulp-concat": "latest",
-  "gulp-uglifycss": "latest",
-  "gulp-clean-css": "latest",
-  "susy": "latest",
-  "sass": "latest"
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-coffee": "latest",
+    "gulp-concat": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-uglifycss": "latest",
+    "gulp-util": "latest",
+    "normalize.css": "^7.0.0",
+    "sass": "latest",
+    "susy": "latest"
   }
 }
