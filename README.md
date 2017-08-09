@@ -3,8 +3,7 @@
 This git repo is a place for me to test website ideas and concepts.
 
 
-## Basic Html Setup
-Setting up the basic foundation for all projects using:
-```
-npm install
-```
+## Master
+The master branch is the place for my latest completed ideas.
+
+Other branches will have previous projects or working projects.
