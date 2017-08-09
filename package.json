@@ -6,7 +6,8 @@
   "gulp-coffee": "latest",
   "gulp-uglify": "latest",
   "gulp-concat": "latest",
-  "gulp-connect": "latest",
+  "gulp-uglifycss": "latest",
+  "gulp-clean-css": "latest",
   "susy": "latest",
   "sass": "latest"
   }
