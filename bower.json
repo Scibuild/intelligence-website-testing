@@ -1,0 +1,24 @@
+{
+  "name": "intelligence-website-testing",
+  "description": "This git repository is a place for me to test website ideas and concepts.",
+  "main": "index.html",
+  "authors": [
+    "Scibuild"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/Scibuild/intelligence-website-testing",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "^4.3.4"
+  },
+  "devDependencies": {
+    "bourbon": "^4.3.4"
+  }
+}
