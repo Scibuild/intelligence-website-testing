@@ -1,8 +1,41 @@
-nav {
-  ul {
-    li {
-      float:left;
+header {
+  background-color: black;
+  color: $color_yellow;
+  .wrap {
+    padding: 2em; 
+    padding-top: 0em;
+    padding-bottom: 0em;
+  }
+  .site-branding {
+    font-size: 4em;
+    font-family: 'Roboto Slab', serif;
+    width: span(8);
+  }
+  height: 5em;
+}
 
-    }
+nav {
+  float: right;
+  //position: span(5 last);
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    padding: 2em;
+    text-decoration: none;
+    color: $color_yellow;
+      &:hover {
+        color: $color_orange;
+        background-color: $color_purple;
+      }
+      &:visited {
+        color: $color_yellow;
+      }
+      &:active {
+        color: $color_red;
+      }
   }
 }

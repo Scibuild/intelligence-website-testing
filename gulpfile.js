@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+    gutil= require('gulp-util'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     sass = require('gulp-sass'),
@@ -6,7 +7,6 @@ var gulp = require('gulp'),
     uglifyCSS = require('gulp-uglifycss');
 gulp.task('js', function() {
   gulp.src('lib/**/*.js')
-  .on('error', swallowError)
   .pipe(uglify())
   .pipe(concat('script.js'))
   .pipe(gulp.dest('js'))
@@ -15,7 +15,7 @@ gulp.task('sass', function() {
   gulp.src('./sass/**/*.{scss,sass}')
     .pipe(sass({
       errLogToConsole: true
-    }))
+    }).on('error', function() {}))
     .pipe(cleanCSS())
     .pipe(uglifyCSS())
     .pipe(gulp.dest('./css'));

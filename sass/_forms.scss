@@ -1,0 +1,35 @@
+/*
+*   Text Fields
+*/
+#{$all-text-inputs} {
+  border: 1px solid $color_yellow;
+}
+
+#{$all-text-inputs-focus},
+#{$all-text-inputs-hover} {
+  border: 1px solid $color_orange;
+}
+
+#{$all-text-inputs-active} {
+  border: 1px solid $color_red;
+}
+
+/*
+*   Buttons
+*/
+#{$all-buttons} {
+  background-color: $color_yellow;
+  border: 2px solid $color_purple;
+  border-radius: 2px;
+}
+
+#{$all-buttons-focus},
+#{$all-buttons-hover} {
+  background-color: $color_green;
+}
+
+#{$all-buttons-active} {
+  background-color: $color_orange;
+  border-color: $color_red;
+  color: $color_red;
+}
