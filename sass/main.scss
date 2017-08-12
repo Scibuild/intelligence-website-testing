@@ -1,5 +1,5 @@
 @import "../bower_components/susy/sass/susy";
-@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";  
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
@@ -8,4 +8,6 @@
 @import "global";
 @import "layout";
 @import "header";
-@import "forms"
+@import "forms";
+@import "footer";
+@import "aside";

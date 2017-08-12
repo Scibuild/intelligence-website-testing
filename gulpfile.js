@@ -15,7 +15,7 @@ gulp.task('sass', function() {
   gulp.src('./sass/**/*.{scss,sass}')
     .pipe(sass({
       errLogToConsole: true
-    }).on('error', function() {}))
+    }))
     .pipe(cleanCSS())
     .pipe(uglifyCSS())
     .pipe(gulp.dest('./css'));

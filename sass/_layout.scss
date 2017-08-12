@@ -8,10 +8,7 @@
 }
 .aside {
   @include susy-breakpoint($large_screen){
-    @include span(3 last);
-  }
-  @include susy-breakpoint($medium_screen){
-    float: right;
+    @include span(4 last);
   }
 }
 .header-nav {
