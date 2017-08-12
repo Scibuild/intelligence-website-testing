@@ -2,37 +2,39 @@ header {
   background-color: black;
   color: $color_yellow;
   .wrap {
-    padding: 2em; 
+    padding: 2em;
     padding-top: 0em;
     padding-bottom: 0em;
   }
   .site-branding {
-    font-size: 4em;
+    font-size: 2.5em;
     font-family: 'Roboto Slab', serif;
-    width: span(8);
+    text-align: center;
+    padding-top: 30px;
   }
-  height: 5em;
 }
 
 nav {
-  float: right;
-  //position: span(5 last);
+  //float: right;
+  text-align: center;
   ul {
     list-style: none;
+    padding: 0;
   }
   li {
     display: inline-block;
+    padding: 1.4em;
   }
   a {
-    padding: 2em;
     text-decoration: none;
     color: $color_yellow;
-      &:hover {
-        color: $color_orange;
-        background-color: $color_purple;
-      }
+
       &:visited {
         color: $color_yellow;
+      }
+      &:hover {
+        color: $color_orange;
+        //background-color: $color_purple;
       }
       &:active {
         color: $color_red;

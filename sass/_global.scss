@@ -1,9 +1,8 @@
 //---Susy configuration---
 $susy: (
-  'columns': susy-repeat(12),
-  'gutters': 0.25,
-  'spread': 'narrow',
-  'container-spread': 'narrow',
+  columns:12,
+  gutters:1/6,
+  global-box-sizing: border-box
 );
 
 body {

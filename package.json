@@ -9,8 +9,7 @@
     "gulp-uglifycss": "latest",
     "gulp-util": "latest",
     "normalize.css": "^7.0.0",
-    "sass": "latest",
-    "susy": "latest"
+    "sass": "latest"
   },
   "name": "intelligence-website-testing",
   "description": "This git repository is a place for me to test website ideas and concepts.",

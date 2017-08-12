@@ -1,9 +1,28 @@
-.aside {
-  width: span(3 last);
-  float: right;
+.wrap {
+  @include container(85%);
 }
-.content {
-  margin-left: span(1);
-  width: span(8);
+.content-main {
+  @include susy-breakpoint($large_screen){
+    @include span(8);
+  }
+}
+.aside {
+  @include susy-breakpoint($large_screen){
+    @include span(3 last);
+  }
+  @include susy-breakpoint($medium_screen){
+    float: right;
+  }
+}
+.header-nav {
+  @include susy-breakpoint($medium_screen) {
+    @include span(7 last);
+    text-align: left;
+  }
+}
+.site-branding {
+  @include susy-breakpoint($medium_screen) {
+    @include span(5);
+  }
 
 }

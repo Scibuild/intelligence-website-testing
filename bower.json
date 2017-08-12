@@ -19,6 +19,7 @@
     "bourbon": "^4.3.4"
   },
   "devDependencies": {
-    "bourbon": "^4.3.4"
+    "bourbon": "^4.3.4",
+    "susy": "^2.1.2"
   }
 }
