@@ -8,6 +8,13 @@ $color_purple: rgba(82, 72, 156, 1);
 
 $source_sans: "Source Sans Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
 
-$small_screen: 480px;
-$medium_screen: 720px;
-$large_screen: 960px;
+$small_screen: 48em;
+$medium_screen: 64em;
+$large_screen: 72em;
+
+// Font-Size
+$base-font-size: 0.5cm;
+
+// Line-Height
+$base-line-height: 1.5;
+$header-line-height: 1.25;
