@@ -2,16 +2,18 @@
 *   Text Fields
 */
 #{$all-text-inputs} {
-  border: 1px solid $color_yellow;
+  border: 2px solid $color_yellow;
+  border-radius: 2px;
+  padding: 2px;
 }
 
 #{$all-text-inputs-focus},
 #{$all-text-inputs-hover} {
-  border: 1px solid $color_orange;
+  border: 2px solid $color_orange;
 }
 
 #{$all-text-inputs-active} {
-  border: 1px solid $color_red;
+  border: 2px solid $color_red;
 }
 
 /*
