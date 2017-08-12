@@ -1,14 +1,38 @@
 {
-"devDependencies": {
-  "gulp": "latest",
-  "gulp-util": "latest",
-  "gulp-sass": "latest",
-  "gulp-coffee": "latest",
-  "gulp-uglify": "latest",
-  "gulp-concat": "latest",
-  "gulp-uglifycss": "latest",
-  "gulp-clean-css": "latest",
-  "susy": "latest",
-  "sass": "latest"
-  }
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-coffee": "latest",
+    "gulp-concat": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-uglifycss": "latest",
+    "gulp-util": "latest",
+    "normalize.css": "^7.0.0",
+    "sass": "latest"
+  },
+  "name": "intelligence-website-testing",
+  "description": "This git repository is a place for me to test website ideas and concepts.",
+  "version": "0.0.4",
+  "main": "index.html",
+  "dependencies": {
+    "bourbon": "^4.3.4",
+    "gulp-clean-css": "^3.7.0",
+    "gulp": "^3.9.1",
+    "gulp-uglifycss": "^1.0.8",
+    "normalize.css": "^7.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scibuild/intelligence-website-testing.git"
+  },
+  "author": "Scibuild",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Scibuild/intelligence-website-testing/issues"
+  },
+  "homepage": "https://github.com/Scibuild/intelligence-website-testing#readme"
 }

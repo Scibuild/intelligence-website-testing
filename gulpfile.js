@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+    gutil= require('gulp-util'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     sass = require('gulp-sass'),
@@ -13,15 +14,15 @@ gulp.task('js', function() {
 gulp.task('sass', function() {
   gulp.src('./sass/**/*.{scss,sass}')
     .pipe(sass({
-      errLogToConsole: true,
-      includePaths: ['node_modules/susy/sass']
-      }))
-    // Writes sourcemaps into the CSS file
-    .pipe(uglifyCSS())
+      errLogToConsole: true
+    }))
     .pipe(cleanCSS())
+    .pipe(uglifyCSS())
     .pipe(gulp.dest('./css'));
 });
 gulp.task('watch', function() {
   gulp.watch('./sass/**/*.{scss,sass}',['sass']);
   gulp.watch('./lib/**/*.js', ['js']);
 });
+
+function swallowError (error) {this.emit('end')}

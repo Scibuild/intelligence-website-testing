@@ -1,3 +1,16 @@
+//---Susy configuration---
+$susy: (
+  columns:12,
+  gutters:1/6,
+  global-box-sizing: border-box
+);
+
 body {
-  background-color: #fff;
+  background-color: white;
+  font-family: $source_sans;
+}
+
+.title {
+  font-size: 5em;
+  font-weight: lighter;
 }

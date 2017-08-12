@@ -1,0 +1,43 @@
+header {
+  background-color: black;
+  color: $color_yellow;
+  .wrap {
+    padding: 2em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+  }
+  .site-branding {
+    font-size: 2.5em;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+nav {
+  //float: right;
+  text-align: center;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    padding: 1.4em;
+  }
+  a {
+    text-decoration: none;
+    color: $color_yellow;
+
+      &:visited {
+        color: $color_yellow;
+      }
+      &:hover {
+        color: $color_orange;
+        //background-color: $color_purple;
+      }
+      &:active {
+        color: $color_red;
+      }
+  }
+}
